@@ -14,6 +14,15 @@
 		162DDAEE2AA2ACCC00B56B1D /* Project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDAED2AA2ACCC00B56B1D /* Project2Tests.swift */; };
 		162DDAF82AA2ACCC00B56B1D /* Project2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDAF72AA2ACCC00B56B1D /* Project2UITests.swift */; };
 		162DDAFA2AA2ACCC00B56B1D /* Project2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDAF92AA2ACCC00B56B1D /* Project2UITestsLaunchTests.swift */; };
+		162DDB082AA2AD4800B56B1D /* VALORANTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB072AA2AD4800B56B1D /* VALORANTService.swift */; };
+		162DDB0B2AA2B27400B56B1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 162DDB0A2AA2B27400B56B1D /* Alamofire */; };
+		162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB0D2AA2B94900B56B1D /* Constants.swift */; };
+		162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB102AA38ADA00B56B1D /* VTAgentData.swift */; };
+		162DDB132AA5053300B56B1D /* VTMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB122AA5053300B56B1D /* VTMapData.swift */; };
+		162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB142AA5063B00B56B1D /* VTWeaponData.swift */; };
+		162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB172AA50A2C00B56B1D /* AgentsListView.swift */; };
+		162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB192AA5126D00B56B1D /* AgentRowView.swift */; };
+		162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		162DDAF32AA2ACCC00B56B1D /* Project2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		162DDAF72AA2ACCC00B56B1D /* Project2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2UITests.swift; sourceTree = "<group>"; };
 		162DDAF92AA2ACCC00B56B1D /* Project2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		162DDB072AA2AD4800B56B1D /* VALORANTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VALORANTService.swift; sourceTree = "<group>"; };
+		162DDB0D2AA2B94900B56B1D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		162DDB102AA38ADA00B56B1D /* VTAgentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAgentData.swift; sourceTree = "<group>"; };
+		162DDB122AA5053300B56B1D /* VTMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMapData.swift; sourceTree = "<group>"; };
+		162DDB142AA5063B00B56B1D /* VTWeaponData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWeaponData.swift; sourceTree = "<group>"; };
+		162DDB172AA50A2C00B56B1D /* AgentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsListView.swift; sourceTree = "<group>"; };
+		162DDB192AA5126D00B56B1D /* AgentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRowView.swift; sourceTree = "<group>"; };
+		162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAgentsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162DDB0B2AA2B27400B56B1D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,11 @@
 		162DDADB2AA2ACCC00B56B1D /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				162DDB1B2AA5182A00B56B1D /* ViewModel */,
+				162DDB162AA50A2000B56B1D /* View */,
+				162DDB0F2AA38AC800B56B1D /* Model */,
+				162DDB0C2AA2B94000B56B1D /* Util */,
+				162DDB062AA2AD3E00B56B1D /* Service */,
 				162DDADC2AA2ACCC00B56B1D /* Project2App.swift */,
 				162DDADE2AA2ACCC00B56B1D /* ContentView.swift */,
 				162DDAE02AA2ACCC00B56B1D /* Assets.xcassets */,
@@ -127,6 +150,49 @@
 			path = Project2UITests;
 			sourceTree = "<group>";
 		};
+		162DDB062AA2AD3E00B56B1D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB072AA2AD4800B56B1D /* VALORANTService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		162DDB0C2AA2B94000B56B1D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB0D2AA2B94900B56B1D /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		162DDB0F2AA38AC800B56B1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB142AA5063B00B56B1D /* VTWeaponData.swift */,
+				162DDB102AA38ADA00B56B1D /* VTAgentData.swift */,
+				162DDB122AA5053300B56B1D /* VTMapData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		162DDB162AA50A2000B56B1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB172AA50A2C00B56B1D /* AgentsListView.swift */,
+				162DDB192AA5126D00B56B1D /* AgentRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		162DDB1B2AA5182A00B56B1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +209,9 @@
 			dependencies = (
 			);
 			name = Project2;
+			packageProductDependencies = (
+				162DDB0A2AA2B27400B56B1D /* Alamofire */,
+			);
 			productName = Project2;
 			productReference = 162DDAD92AA2ACCC00B56B1D /* Project2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +284,9 @@
 				Base,
 			);
 			mainGroup = 162DDAD02AA2ACCC00B56B1D;
+			packageReferences = (
+				162DDB092AA2B27400B56B1D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 162DDADA2AA2ACCC00B56B1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */,
+				162DDB132AA5053300B56B1D /* VTMapData.swift in Sources */,
+				162DDB082AA2AD4800B56B1D /* VALORANTService.swift in Sources */,
 				162DDADF2AA2ACCC00B56B1D /* ContentView.swift in Sources */,
+				162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */,
+				162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */,
+				162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */,
 				162DDADD2AA2ACCC00B56B1D /* Project2App.swift in Sources */,
+				162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */,
+				162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +663,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		162DDB092AA2B27400B56B1D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		162DDB0A2AA2B27400B56B1D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 162DDB092AA2B27400B56B1D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 162DDAD12AA2ACCC00B56B1D /* Project object */;
 }

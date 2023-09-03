@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    let VTService: VALORANTService
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            AgentsListView()
+                .tabItem {
+                    Label("Agents", systemImage: "list.dash")
+                }
+            AgentRowView()
+                .tabItem {
+                    Label("Agents", systemImage: "square.and.pencil")
+                }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(VTService: VALORANTService())
     }
 }
