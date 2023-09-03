@@ -13,7 +13,9 @@ struct VTMapData: Decodable {
 
 }
 
-struct VTMap: Decodable {
+struct VTMap: Decodable, Identifiable {
+    
+    let id = UUID()
     
     var uuid: String
     var displayName: String

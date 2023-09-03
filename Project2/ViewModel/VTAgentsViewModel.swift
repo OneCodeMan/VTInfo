@@ -16,7 +16,7 @@ class VTAgentsViewModel: ObservableObject {
         fetchAgents()
     }
     
-    func fetchAgents() {
+    private func fetchAgents() {
         VTService.fetchAgents { [weak self] agents in
             guard let strongSelf = self else {
                 return

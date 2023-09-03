@@ -12,7 +12,9 @@ struct VTWeaponData: Decodable {
     var data: [VTWeapon]
 }
 
-struct VTWeapon: Decodable {
+struct VTWeapon: Decodable, Identifiable {
+    let id = UUID()
+    
     var uuid: String
     var displayName: String
     var category: String

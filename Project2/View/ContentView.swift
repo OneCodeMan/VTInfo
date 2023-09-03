@@ -12,14 +12,27 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
+            // Agents Tab
             AgentsListView()
                 .tabItem {
+                    // TODO: Make constant
                     Label("Agents", systemImage: "list.dash")
                 }
-            AgentRowView()
+            
+            // Maps Tab
+            MapsListView()
                 .tabItem {
-                    Label("Agents", systemImage: "square.and.pencil")
+                    // TODO: Make constant
+                    Label("Maps", systemImage: "square.and.pencil")
                 }
+            
+            // Weapons Tab
+            WeaponsListView()
+                .tabItem {
+                    // TODO: Make constant
+                    Label("Weapons", systemImage: "circle")
+                }
+            
         }
     }
 }

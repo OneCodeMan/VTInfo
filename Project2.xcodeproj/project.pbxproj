@@ -23,6 +23,11 @@
 		162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB172AA50A2C00B56B1D /* AgentsListView.swift */; };
 		162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB192AA5126D00B56B1D /* AgentRowView.swift */; };
 		162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */; };
+		162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB1E2AA54E6800B56B1D /* VTWeaponsViewModel.swift */; };
+		162DDB212AA54EA100B56B1D /* VTMapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB202AA54EA100B56B1D /* VTMapsViewModel.swift */; };
+		162DDB262AA54EFB00B56B1D /* MapsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB252AA54EFB00B56B1D /* MapsListView.swift */; };
+		162DDB282AA54F9600B56B1D /* MapsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB272AA54F9600B56B1D /* MapsRowView.swift */; };
+		162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB292AA54FC700B56B1D /* WeaponsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		162DDB172AA50A2C00B56B1D /* AgentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsListView.swift; sourceTree = "<group>"; };
 		162DDB192AA5126D00B56B1D /* AgentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRowView.swift; sourceTree = "<group>"; };
 		162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAgentsViewModel.swift; sourceTree = "<group>"; };
+		162DDB1E2AA54E6800B56B1D /* VTWeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWeaponsViewModel.swift; sourceTree = "<group>"; };
+		162DDB202AA54EA100B56B1D /* VTMapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMapsViewModel.swift; sourceTree = "<group>"; };
+		162DDB252AA54EFB00B56B1D /* MapsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsListView.swift; sourceTree = "<group>"; };
+		162DDB272AA54F9600B56B1D /* MapsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRowView.swift; sourceTree = "<group>"; };
+		162DDB292AA54FC700B56B1D /* WeaponsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +128,6 @@
 				162DDB0C2AA2B94000B56B1D /* Util */,
 				162DDB062AA2AD3E00B56B1D /* Service */,
 				162DDADC2AA2ACCC00B56B1D /* Project2App.swift */,
-				162DDADE2AA2ACCC00B56B1D /* ContentView.swift */,
 				162DDAE02AA2ACCC00B56B1D /* Assets.xcassets */,
 				162DDAE22AA2ACCC00B56B1D /* Preview Content */,
 			);
@@ -179,8 +188,10 @@
 		162DDB162AA50A2000B56B1D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				162DDB172AA50A2C00B56B1D /* AgentsListView.swift */,
-				162DDB192AA5126D00B56B1D /* AgentRowView.swift */,
+				162DDADE2AA2ACCC00B56B1D /* ContentView.swift */,
+				162DDB242AA54EE000B56B1D /* Maps */,
+				162DDB232AA54EDC00B56B1D /* Weapons */,
+				162DDB222AA54ED300B56B1D /* Agents */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,8 +200,36 @@
 			isa = PBXGroup;
 			children = (
 				162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */,
+				162DDB1E2AA54E6800B56B1D /* VTWeaponsViewModel.swift */,
+				162DDB202AA54EA100B56B1D /* VTMapsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		162DDB222AA54ED300B56B1D /* Agents */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB172AA50A2C00B56B1D /* AgentsListView.swift */,
+				162DDB192AA5126D00B56B1D /* AgentRowView.swift */,
+			);
+			path = Agents;
+			sourceTree = "<group>";
+		};
+		162DDB232AA54EDC00B56B1D /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB292AA54FC700B56B1D /* WeaponsListView.swift */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
+		162DDB242AA54EE000B56B1D /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB252AA54EFB00B56B1D /* MapsListView.swift */,
+				162DDB272AA54F9600B56B1D /* MapsRowView.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,14 +370,19 @@
 			files = (
 				162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */,
 				162DDB132AA5053300B56B1D /* VTMapData.swift in Sources */,
+				162DDB282AA54F9600B56B1D /* MapsRowView.swift in Sources */,
+				162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */,
 				162DDB082AA2AD4800B56B1D /* VALORANTService.swift in Sources */,
 				162DDADF2AA2ACCC00B56B1D /* ContentView.swift in Sources */,
+				162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */,
 				162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */,
 				162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */,
 				162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */,
 				162DDADD2AA2ACCC00B56B1D /* Project2App.swift in Sources */,
 				162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */,
 				162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */,
+				162DDB262AA54EFB00B56B1D /* MapsListView.swift in Sources */,
+				162DDB212AA54EA100B56B1D /* VTMapsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
