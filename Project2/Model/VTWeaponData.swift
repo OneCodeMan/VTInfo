@@ -43,4 +43,25 @@ struct VTWeapon: Decodable, Identifiable {
         var displayName: String
         var displayIcon: String?
     }
+    
+    // TODO: EDIT FOR THE RIGHT THINGS
+    enum CodingKeys: String, CodingKey {
+        case uuid
+        case displayName
+        case category
+        case weaponStats
+        case shopData
+        case skins
+    }
+    
+    // `decodeIfPresent` takes care of null values with some keys.
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        uuid = try values.decode(String.self, forKey: .uuid)
+        displayName = try values.decode(String.self, forKey: .displayName)
+        category = try values.decode(String.self, forKey: .category)
+        weaponStats = try values.decodeIfPresent(VTWeaponStats.self, forKey: .weaponStats)
+        shopData = try values.decodeIfPresent(VTShopData.self, forKey: .shopData)
+        skins = try values.decode([VTSkins].self, forKey: .skins)
+    }
 }

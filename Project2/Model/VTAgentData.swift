@@ -39,4 +39,27 @@ struct VTAgent: Decodable, Identifiable {
         var displayIcon: String?
     }
     
+    enum CodingKeys: String, CodingKey {
+        case uuid
+        case displayName
+        case description
+        case displayIcon
+        case bustPortrait
+        case role
+        case abilities
+    }
+    
+    // `decodeIfPresent` takes care of null values with some keys.
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        uuid = try values.decode(String.self, forKey: .uuid)
+        displayName = try values.decode(String.self, forKey: .displayName)
+        description = try values.decode(String.self, forKey: .description)
+        displayIcon = try values.decode(String.self, forKey: .displayIcon)
+        bustPortrait = try values.decodeIfPresent(String.self, forKey: .bustPortrait)
+        role = try values.decodeIfPresent(VTRole.self, forKey: .role)
+        abilities = try values.decode([VTAbility].self, forKey: .abilities)
+        
+    }
+    
 }
