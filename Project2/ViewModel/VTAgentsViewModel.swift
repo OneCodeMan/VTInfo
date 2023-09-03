@@ -7,17 +7,21 @@
 
 import Foundation
 
-struct VTAgentsViewModel {
+class VTAgentsViewModel: ObservableObject {
     
     let VTService = VALORANTService()
-    var agentsList: [VTAgent]
+    @Published var agentsList: [VTAgent] = []
     
-    init(agentsList: [VTAgent]) {
-        self.agentsList = agentsList
+    init() {
+        fetchAgents()
     }
     
     func fetchAgents() {
-        let agentsFromService = VTService.fetchAgents()
-        print(agentsFromService)
+        VTService.fetchAgents { [weak self] agents in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.agentsList = agents
+        }
     }
 }

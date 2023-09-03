@@ -18,7 +18,7 @@ struct AgentRowView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 5))
 
             VStack(alignment: .leading, spacing: 5) {
-                Text("Gekko")
+                Text("The actual row")
                 
                 Text("Swagger of a champion.")
                     .font(.caption)

@@ -10,11 +10,12 @@ import Alamofire
 
 struct VALORANTService {
     
-    func fetchAgents() {
+    func fetchAgents(completion: @escaping ([VTAgent]) -> Void) {
         AF.request(Constants.AGENTS_URL).responseDecodable(of: VTAgentData.self) { response in
             switch response.result {
             case .success(let agentsRawData):
                 let agentsDataFromResponse = agentsRawData.data
+                completion(agentsDataFromResponse)
             case .failure(let error):
                 print(response)
                 print("Error: \(error.localizedDescription)")
@@ -23,12 +24,12 @@ struct VALORANTService {
         
     }
     
-    func fetchMaps() {
+    func fetchMaps(completion: @escaping ([VTMap]) -> Void) {
         AF.request(Constants.MAPS_URL).responseDecodable(of: VTMapData.self) { response in
             switch response.result {
             case .success(let mapRawData):
                 let mapData = mapRawData.data
-                print(mapData)
+                completion(mapData)
             case .failure(let error):
                 print(response)
                 print("Error: \(error.localizedDescription)")
@@ -36,12 +37,12 @@ struct VALORANTService {
         }
     }
     
-    func fetchWeapons() {
+    func fetchWeapons(completion: @escaping ([VTWeapon]) -> Void) {
         AF.request(Constants.WEAPONS_URL).responseDecodable(of: VTWeaponData.self) { response in
             switch response.result {
             case .success(let weaponRawData):
                 let weaponData = weaponRawData.data
-                print(weaponData)
+                completion(weaponData)
             case .failure(let error):
                 print(response)
                 print("Error: \(error.localizedDescription)")

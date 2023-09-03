@@ -12,7 +12,9 @@ struct VTAgentData: Decodable {
     var data: [VTAgent]
 }
 
-struct VTAgent: Decodable {
+struct VTAgent: Decodable, Identifiable {
+    
+    let id = UUID()
 
     var uuid: String
     var displayName: String
