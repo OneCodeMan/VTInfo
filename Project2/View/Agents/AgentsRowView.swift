@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-// TODO: Modify and use
-struct AgentRowView: View {
+struct AgentsRowView: View {
+    
+    let agent: VTAgent
     
     var body: some View {
         HStack(alignment: .top, spacing: 10) {
             
-            Image("potato")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+            // TODO: refactor
+            // https://wwdcbysundell.com/2021/using-swiftui-async-image/
+            CustomAsyncImage(imageURLString: agent.displayIcon)
 
             VStack(alignment: .leading, spacing: 5) {
-                Text("The actual row")
+                Text(agent.displayName)
                 
-                Text("Swagger of a champion.")
+                Text(agent.description)
                     .font(.caption)
             }
             .padding(.trailing, 10)

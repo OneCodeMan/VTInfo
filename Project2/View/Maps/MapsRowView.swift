@@ -8,28 +8,21 @@
 import SwiftUI
 
 struct MapsRowView: View {
+    let map: VTMap
+    
     var body: some View {
         HStack(alignment: .top, spacing: 10) {
             
-            Image("potato")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .clipShape(RoundedRectangle(cornerRadius: 5))
+            CustomAsyncImage(imageURLString: map.splash)
 
             VStack(alignment: .leading, spacing: 5) {
-                Text("The actual row")
+                Text(map.displayName)
                 
-                Text("Swagger of a champion.")
+                Text(map.narrativeDescription ?? "")
                     .font(.caption)
             }
             .padding(.trailing, 10)
             .padding(.vertical, 5)
         }
-    }
-}
-
-struct MapsRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapsRowView()
     }
 }

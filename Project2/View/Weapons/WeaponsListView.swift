@@ -16,21 +16,7 @@ struct WeaponsListView: View {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(weaponsViewModel.weaponsList) { weapon in
                         HStack(alignment: .top, spacing: 10) {
-                            
-                            // TODO: Get the image URL properly.
-                            Image("potato")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text(weapon.displayName)
-                                
-                                Text(weapon.category)
-                                    .font(.caption)
-                            }
-                            .padding(.trailing, 10)
-                            .padding(.vertical, 5)
+                            WeaponsRowView(weapon: weapon)
                         }
                     }
                 }

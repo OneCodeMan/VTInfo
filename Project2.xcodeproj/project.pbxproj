@@ -21,13 +21,15 @@
 		162DDB132AA5053300B56B1D /* VTMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB122AA5053300B56B1D /* VTMapData.swift */; };
 		162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB142AA5063B00B56B1D /* VTWeaponData.swift */; };
 		162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB172AA50A2C00B56B1D /* AgentsListView.swift */; };
-		162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB192AA5126D00B56B1D /* AgentRowView.swift */; };
+		162DDB1A2AA5126D00B56B1D /* AgentsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB192AA5126D00B56B1D /* AgentsRowView.swift */; };
 		162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */; };
 		162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB1E2AA54E6800B56B1D /* VTWeaponsViewModel.swift */; };
 		162DDB212AA54EA100B56B1D /* VTMapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB202AA54EA100B56B1D /* VTMapsViewModel.swift */; };
 		162DDB262AA54EFB00B56B1D /* MapsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB252AA54EFB00B56B1D /* MapsListView.swift */; };
 		162DDB282AA54F9600B56B1D /* MapsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB272AA54F9600B56B1D /* MapsRowView.swift */; };
 		162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB292AA54FC700B56B1D /* WeaponsListView.swift */; };
+		162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */; };
+		162DDB2F2AA64A4800B56B1D /* WeaponsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +66,15 @@
 		162DDB122AA5053300B56B1D /* VTMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMapData.swift; sourceTree = "<group>"; };
 		162DDB142AA5063B00B56B1D /* VTWeaponData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWeaponData.swift; sourceTree = "<group>"; };
 		162DDB172AA50A2C00B56B1D /* AgentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsListView.swift; sourceTree = "<group>"; };
-		162DDB192AA5126D00B56B1D /* AgentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRowView.swift; sourceTree = "<group>"; };
+		162DDB192AA5126D00B56B1D /* AgentsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentsRowView.swift; sourceTree = "<group>"; };
 		162DDB1C2AA5184600B56B1D /* VTAgentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAgentsViewModel.swift; sourceTree = "<group>"; };
 		162DDB1E2AA54E6800B56B1D /* VTWeaponsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWeaponsViewModel.swift; sourceTree = "<group>"; };
 		162DDB202AA54EA100B56B1D /* VTMapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMapsViewModel.swift; sourceTree = "<group>"; };
 		162DDB252AA54EFB00B56B1D /* MapsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsListView.swift; sourceTree = "<group>"; };
 		162DDB272AA54F9600B56B1D /* MapsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRowView.swift; sourceTree = "<group>"; };
 		162DDB292AA54FC700B56B1D /* WeaponsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListView.swift; sourceTree = "<group>"; };
+		162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
+		162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 		162DDB162AA50A2000B56B1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				162DDB2B2AA646DF00B56B1D /* Custom */,
 				162DDADE2AA2ACCC00B56B1D /* ContentView.swift */,
 				162DDB242AA54EE000B56B1D /* Maps */,
 				162DDB232AA54EDC00B56B1D /* Weapons */,
@@ -210,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				162DDB172AA50A2C00B56B1D /* AgentsListView.swift */,
-				162DDB192AA5126D00B56B1D /* AgentRowView.swift */,
+				162DDB192AA5126D00B56B1D /* AgentsRowView.swift */,
 			);
 			path = Agents;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				162DDB292AA54FC700B56B1D /* WeaponsListView.swift */,
+				162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -230,6 +236,14 @@
 				162DDB272AA54F9600B56B1D /* MapsRowView.swift */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		162DDB2B2AA646DF00B56B1D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,10 +391,12 @@
 				162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */,
 				162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */,
 				162DDB182AA50A2C00B56B1D /* AgentsListView.swift in Sources */,
-				162DDB1A2AA5126D00B56B1D /* AgentRowView.swift in Sources */,
+				162DDB1A2AA5126D00B56B1D /* AgentsRowView.swift in Sources */,
 				162DDADD2AA2ACCC00B56B1D /* Project2App.swift in Sources */,
 				162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */,
+				162DDB2F2AA64A4800B56B1D /* WeaponsRowView.swift in Sources */,
 				162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */,
+				162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */,
 				162DDB262AA54EFB00B56B1D /* MapsListView.swift in Sources */,
 				162DDB212AA54EA100B56B1D /* VTMapsViewModel.swift in Sources */,
 			);

@@ -17,20 +17,7 @@ struct MapsListView: View {
                     ForEach(mapsViewModel.mapsList) { map in
                         HStack(alignment: .top, spacing: 10) {
                             
-                            // TODO: Get the image URL properly.
-                            Image("potato")
-                                .resizable()
-                                .frame(width: 100, height: 100)
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
-
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text(map.displayName)
-                                
-                                Text(map.narrativeDescription ?? "")
-                                    .font(.caption)
-                            }
-                            .padding(.trailing, 10)
-                            .padding(.vertical, 5)
+                            MapsRowView(map: map)
                         }
                     }
                 }
