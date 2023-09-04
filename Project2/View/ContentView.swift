@@ -15,25 +15,24 @@ struct ContentView: View {
             // Agents Tab
             AgentsListView()
                 .tabItem {
-                    // TODO: Make constant
-                    Label("Agents", systemImage: "list.dash")
+                    Label(Constants.AGENTS_NAV_TITLE, systemImage: Constants.AGENTS_TAB_BAR_IMAGE)
                 }
             
             // Maps Tab
             MapsListView()
                 .tabItem {
-                    // TODO: Make constant
-                    Label("Maps", systemImage: "square.and.pencil")
+                    Label(Constants.MAPS_NAV_TITLE, systemImage: Constants.MAPS_TAB_BAR_IMAGE)
                 }
             
             // Weapons Tab
             WeaponsListView()
                 .tabItem {
-                    // TODO: Make constant
-                    Label("Weapons", systemImage: "circle")
+                    Label(Constants.WEAPONS_NAV_TITLE, systemImage: Constants.WEAPONS_TAB_BAR_IMAGE)
                 }
-            
         }
+        .tint(Color.VT_RED) // How to change selected tab item colour
+        .
+        
     }
 }
 

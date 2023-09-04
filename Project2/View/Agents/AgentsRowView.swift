@@ -14,8 +14,6 @@ struct AgentsRowView: View {
     var body: some View {
         HStack(alignment: .top, spacing: 10) {
             
-            // TODO: refactor
-            // https://wwdcbysundell.com/2021/using-swiftui-async-image/
             CustomAsyncImage(imageURLString: agent.displayIcon)
 
             VStack(alignment: .leading, spacing: 5) {

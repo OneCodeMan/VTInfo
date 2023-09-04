@@ -21,8 +21,8 @@ struct AgentsListView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Agents") // TODO: Make constant
-        }
+            .navigationTitle(Constants.AGENTS_NAV_TITLE)
+        }.navigationBarTitleTextColor(Color.VT_RED)
     }
 }
 

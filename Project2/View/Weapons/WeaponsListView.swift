@@ -22,7 +22,7 @@ struct WeaponsListView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Weapons") // TODO: Make constant
+            .navigationTitle(Constants.WEAPONS_NAV_TITLE)
         }
     }
 }

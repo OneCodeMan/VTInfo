@@ -23,7 +23,7 @@ struct MapsListView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Maps")
+            .navigationTitle(Constants.MAPS_NAV_TITLE)
         }
     }
 }

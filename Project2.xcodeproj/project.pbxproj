@@ -30,6 +30,8 @@
 		162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB292AA54FC700B56B1D /* WeaponsListView.swift */; };
 		162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */; };
 		162DDB2F2AA64A4800B56B1D /* WeaponsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */; };
+		162DDB322AA6715900B56B1D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB312AA6715900B56B1D /* UIColorExtension.swift */; };
+		162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		162DDB292AA54FC700B56B1D /* WeaponsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListView.swift; sourceTree = "<group>"; };
 		162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 		162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsRowView.swift; sourceTree = "<group>"; };
+		162DDB312AA6715900B56B1D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitleColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		162DDADB2AA2ACCC00B56B1D /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				162DDB302AA66F7E00B56B1D /* Data */,
 				162DDB1B2AA5182A00B56B1D /* ViewModel */,
 				162DDB162AA50A2000B56B1D /* View */,
 				162DDB0F2AA38AC800B56B1D /* Model */,
@@ -174,7 +179,8 @@
 		162DDB0C2AA2B94000B56B1D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				162DDB0D2AA2B94900B56B1D /* Constants.swift */,
+				162DDB312AA6715900B56B1D /* UIColorExtension.swift */,
+				162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -244,6 +250,14 @@
 				162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		162DDB302AA66F7E00B56B1D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				162DDB0D2AA2B94900B56B1D /* Constants.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,9 +398,11 @@
 			files = (
 				162DDB1D2AA5184600B56B1D /* VTAgentsViewModel.swift in Sources */,
 				162DDB132AA5053300B56B1D /* VTMapData.swift in Sources */,
+				162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */,
 				162DDB282AA54F9600B56B1D /* MapsRowView.swift in Sources */,
 				162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */,
 				162DDB082AA2AD4800B56B1D /* VALORANTService.swift in Sources */,
+				162DDB322AA6715900B56B1D /* UIColorExtension.swift in Sources */,
 				162DDADF2AA2ACCC00B56B1D /* ContentView.swift in Sources */,
 				162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */,
 				162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */,
