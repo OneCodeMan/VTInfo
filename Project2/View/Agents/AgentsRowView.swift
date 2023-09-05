@@ -18,12 +18,14 @@ struct AgentsRowView: View {
 
             VStack(alignment: .leading, spacing: 5) {
                 Text(agent.displayName)
+                    .frame(alignment: .leading)
                 
                 Text(agent.description)
                     .font(.caption)
             }
             .padding(.trailing, 10)
             .padding(.vertical, 5)
+            .tint(.VT_BLACK)
         }
     }
 }

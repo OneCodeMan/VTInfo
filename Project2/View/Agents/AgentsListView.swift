@@ -10,16 +10,19 @@ import SwiftUI
 struct AgentsListView: View {
     
     @StateObject var agentsViewModel = VTAgentsViewModel()
+    @State var presentAgentDetailView = false
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(agentsViewModel.agentsList) { agent in
-//                        NavigationLink(destination: AgentDetailView(agent: agent)) {
+                        Button(action: { self.presentAgentDetailView.toggle()}) {
                             AgentsRowView(agent: agent)
                                 .frame(alignment: .leading)
-//                        }
+                        }.sheet(isPresented: $presentAgentDetailView) {
+                            AgentDetailView(agent: agent)
+                        }
                     }
                 }
                 .padding()
@@ -34,3 +37,9 @@ struct AgentsListView_Previews: PreviewProvider {
         AgentsListView()
     }
 }
+//
+//Button(action: { self.isPresented4.toggle() }) {
+//                        Text("Show 🍏")
+//                    }.sheet(isPresented: $isPresented4) {
+//                        Text("🍎")
+//                    }
