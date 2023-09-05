@@ -9,8 +9,15 @@ import SwiftUI
 
 struct AgentDetailView: View {
     let agent: VTAgent
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(agent.displayName)
+                .font(.largeTitle)
+            
+            Text(agent.description)
+                .font(.caption)
+        }
     }
 }
 

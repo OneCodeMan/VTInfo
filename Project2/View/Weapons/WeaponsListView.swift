@@ -9,15 +9,23 @@ import SwiftUI
 
 struct WeaponsListView: View {
     @StateObject var weaponsViewModel = VTWeaponsViewModel()
+    @State var selectedWeapon: VTWeapon?
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(weaponsViewModel.weaponsList) { weapon in
-                        HStack(alignment: .top, spacing: 10) {
-                            WeaponsRowView(weapon: weapon)
+                        Button(action: { selectedWeapon = weapon }) {
+                            HStack(alignment: .top, spacing: 10) {
+                                WeaponsRowView(weapon: weapon)
+                            }
                         }
+                        
+                    }
+                    .sheet(item: $selectedWeapon) { weapon in
+                        WeaponDetailView(weapon: weapon)
+                        
                     }
                 }
                 .padding()

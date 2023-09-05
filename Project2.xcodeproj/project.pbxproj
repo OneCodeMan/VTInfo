@@ -34,6 +34,7 @@
 		162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */; };
 		162DDB382AA6A38200B56B1D /* AgentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB372AA6A38200B56B1D /* AgentDetailView.swift */; };
 		162DDB3C2AA7987B00B56B1D /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB3B2AA7987B00B56B1D /* MapDetailView.swift */; };
+		162DDB3E2AA7A1E900B56B1D /* WeaponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB3D2AA7A1E900B56B1D /* WeaponDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitleColor.swift"; sourceTree = "<group>"; };
 		162DDB372AA6A38200B56B1D /* AgentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailView.swift; sourceTree = "<group>"; };
 		162DDB3B2AA7987B00B56B1D /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
+		162DDB3D2AA7A1E900B56B1D /* WeaponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			children = (
 				162DDB292AA54FC700B56B1D /* WeaponsListView.swift */,
 				162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */,
+				162DDB3D2AA7A1E900B56B1D /* WeaponDetailView.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				162DDB1A2AA5126D00B56B1D /* AgentsRowView.swift in Sources */,
 				162DDADD2AA2ACCC00B56B1D /* Project2App.swift in Sources */,
 				162DDB152AA5063B00B56B1D /* VTWeaponData.swift in Sources */,
+				162DDB3E2AA7A1E900B56B1D /* WeaponDetailView.swift in Sources */,
 				162DDB2F2AA64A4800B56B1D /* WeaponsRowView.swift in Sources */,
 				162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */,
 				162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */,
