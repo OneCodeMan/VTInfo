@@ -12,6 +12,8 @@ struct AgentDetailView: View {
     
     var body: some View {
         VStack {
+            CustomAsyncImage(imageURLString: agent.displayIcon)
+            
             Text(agent.displayName)
                 .font(.largeTitle)
             
