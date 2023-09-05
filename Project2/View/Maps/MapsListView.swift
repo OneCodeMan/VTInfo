@@ -9,16 +9,19 @@ import SwiftUI
 
 struct MapsListView: View {
     @StateObject var mapsViewModel = VTMapsViewModel()
+    @State var selectedMap: VTMap?
     
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(mapsViewModel.mapsList) { map in
-                        HStack(alignment: .top, spacing: 10) {
-                            
+                        Button(action: { selectedMap = map }) {
                             MapsRowView(map: map)
                         }
+                    }
+                    .sheet(item: $selectedMap) { map in
+                        MapDetailView(map: map)
                     }
                 }
                 .padding()

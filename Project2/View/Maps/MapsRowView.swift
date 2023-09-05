@@ -23,6 +23,7 @@ struct MapsRowView: View {
             }
             .padding(.trailing, 10)
             .padding(.vertical, 5)
+            .tint(.VT_BLACK)
         }
     }
 }

@@ -33,6 +33,7 @@
 		162DDB322AA6715900B56B1D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB312AA6715900B56B1D /* ColorExtension.swift */; };
 		162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */; };
 		162DDB382AA6A38200B56B1D /* AgentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB372AA6A38200B56B1D /* AgentDetailView.swift */; };
+		162DDB3C2AA7987B00B56B1D /* MapDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB3B2AA7987B00B56B1D /* MapDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		162DDB312AA6715900B56B1D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitleColor.swift"; sourceTree = "<group>"; };
 		162DDB372AA6A38200B56B1D /* AgentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailView.swift; sourceTree = "<group>"; };
+		162DDB3B2AA7987B00B56B1D /* MapDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			children = (
 				162DDB252AA54EFB00B56B1D /* MapsListView.swift */,
 				162DDB272AA54F9600B56B1D /* MapsRowView.swift */,
+				162DDB3B2AA7987B00B56B1D /* MapDetailView.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				162DDB0E2AA2B94900B56B1D /* Constants.swift in Sources */,
 				162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */,
 				162DDB262AA54EFB00B56B1D /* MapsListView.swift in Sources */,
+				162DDB3C2AA7987B00B56B1D /* MapDetailView.swift in Sources */,
 				162DDB212AA54EA100B56B1D /* VTMapsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
