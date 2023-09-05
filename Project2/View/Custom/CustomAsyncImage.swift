@@ -18,9 +18,8 @@ struct CustomAsyncImage: View {
                 .frame(maxWidth: 100, maxHeight: 100)
         },
            placeholder: {
-            Spacer()
             ProgressView()
-            Spacer()
+                .frame(width: 100, height: 100)
         })
     }
 }

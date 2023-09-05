@@ -44,7 +44,6 @@ struct VTWeapon: Decodable, Identifiable {
         var displayIcon: String?
     }
     
-    // TODO: EDIT FOR THE RIGHT THINGS
     enum CodingKeys: String, CodingKey {
         case uuid
         case displayName
@@ -59,7 +58,13 @@ struct VTWeapon: Decodable, Identifiable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         uuid = try values.decode(String.self, forKey: .uuid)
         displayName = try values.decode(String.self, forKey: .displayName)
-        category = try values.decode(String.self, forKey: .category)
+        
+        // JSON gives us `EFEquipabbleCategory::Heavy`, we only want `Heavy`
+        let categoryDelimiter = "::"
+        let unparsedCategory = try values.decode(String.self, forKey: .category)
+        let parsedCategory = unparsedCategory.components(separatedBy: categoryDelimiter).last ?? ""
+        category = parsedCategory
+        
         weaponStats = try values.decodeIfPresent(VTWeaponStats.self, forKey: .weaponStats)
         shopData = try values.decodeIfPresent(VTShopData.self, forKey: .shopData)
         skins = try values.decode([VTSkins].self, forKey: .skins)

@@ -30,8 +30,9 @@
 		162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB292AA54FC700B56B1D /* WeaponsListView.swift */; };
 		162DDB2D2AA646EC00B56B1D /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */; };
 		162DDB2F2AA64A4800B56B1D /* WeaponsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */; };
-		162DDB322AA6715900B56B1D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB312AA6715900B56B1D /* UIColorExtension.swift */; };
+		162DDB322AA6715900B56B1D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB312AA6715900B56B1D /* ColorExtension.swift */; };
 		162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */; };
+		162DDB382AA6A38200B56B1D /* AgentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162DDB372AA6A38200B56B1D /* AgentDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +78,9 @@
 		162DDB292AA54FC700B56B1D /* WeaponsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsListView.swift; sourceTree = "<group>"; };
 		162DDB2C2AA646EC00B56B1D /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 		162DDB2E2AA64A4800B56B1D /* WeaponsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsRowView.swift; sourceTree = "<group>"; };
-		162DDB312AA6715900B56B1D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		162DDB312AA6715900B56B1D /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavBarTitleColor.swift"; sourceTree = "<group>"; };
+		162DDB372AA6A38200B56B1D /* AgentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +181,7 @@
 		162DDB0C2AA2B94000B56B1D /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				162DDB312AA6715900B56B1D /* UIColorExtension.swift */,
+				162DDB312AA6715900B56B1D /* ColorExtension.swift */,
 				162DDB332AA672DC00B56B1D /* View+NavBarTitleColor.swift */,
 			);
 			path = Util;
@@ -222,6 +224,7 @@
 			children = (
 				162DDB172AA50A2C00B56B1D /* AgentsListView.swift */,
 				162DDB192AA5126D00B56B1D /* AgentsRowView.swift */,
+				162DDB372AA6A38200B56B1D /* AgentDetailView.swift */,
 			);
 			path = Agents;
 			sourceTree = "<group>";
@@ -401,8 +404,9 @@
 				162DDB342AA672DC00B56B1D /* View+NavBarTitleColor.swift in Sources */,
 				162DDB282AA54F9600B56B1D /* MapsRowView.swift in Sources */,
 				162DDB2A2AA54FC700B56B1D /* WeaponsListView.swift in Sources */,
+				162DDB382AA6A38200B56B1D /* AgentDetailView.swift in Sources */,
 				162DDB082AA2AD4800B56B1D /* VALORANTService.swift in Sources */,
-				162DDB322AA6715900B56B1D /* UIColorExtension.swift in Sources */,
+				162DDB322AA6715900B56B1D /* ColorExtension.swift in Sources */,
 				162DDADF2AA2ACCC00B56B1D /* ContentView.swift in Sources */,
 				162DDB1F2AA54E6800B56B1D /* VTWeaponsViewModel.swift in Sources */,
 				162DDB112AA38ADA00B56B1D /* VTAgentData.swift in Sources */,

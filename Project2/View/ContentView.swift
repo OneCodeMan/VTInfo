@@ -31,7 +31,6 @@ struct ContentView: View {
                 }
         }
         .tint(Color.VT_RED) // How to change selected tab item colour
-        .
         
     }
 }

@@ -16,7 +16,10 @@ struct AgentsListView: View {
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 10) {
                     ForEach(agentsViewModel.agentsList) { agent in
-                        AgentsRowView(agent: agent)
+//                        NavigationLink(destination: AgentDetailView(agent: agent)) {
+                            AgentsRowView(agent: agent)
+                                .frame(alignment: .leading)
+//                        }
                     }
                 }
                 .padding()
