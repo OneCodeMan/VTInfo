@@ -40,6 +40,7 @@ struct AgentDetailView: View {
                         Text(ability.displayName)
                             .font(.subheadline)
                             .padding(5)
+                            .bold()
                         
                         Text(ability.description)
                             .font(.caption)
