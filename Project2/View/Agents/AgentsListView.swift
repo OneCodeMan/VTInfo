@@ -37,9 +37,3 @@ struct AgentsListView_Previews: PreviewProvider {
         AgentsListView()
     }
 }
-//
-//Button(action: { self.isPresented4.toggle() }) {
-//                        Text("Show 🍏")
-//                    }.sheet(isPresented: $isPresented4) {
-//                        Text("🍎")
-//                    }

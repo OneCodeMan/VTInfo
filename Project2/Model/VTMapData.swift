@@ -20,6 +20,7 @@ struct VTMap: Decodable, Identifiable {
     var uuid: String
     var displayName: String
     var narrativeDescription: String?
+    var narrativeSummary: String?
     var tacticalDescription: String?
     var displayIcon: String?
     var splash: String
@@ -39,6 +40,15 @@ struct VTMap: Decodable, Identifiable {
         uuid = try values.decode(String.self, forKey: .uuid)
         displayName = try values.decode(String.self, forKey: .displayName)
         narrativeDescription = try values.decodeIfPresent(String.self, forKey: .narrativeDescription)
+        
+        if let narrativeDescriptionSafe = narrativeDescription {
+            let narrativeSummaryDelimiter = "."
+            // Code smell!
+            if let possibleNarrativeSummary = narrativeDescriptionSafe.components(separatedBy: narrativeSummaryDelimiter).first {
+                narrativeSummary = possibleNarrativeSummary + "."
+            }
+        }
+        
         tacticalDescription = try values.decodeIfPresent(String.self, forKey: .tacticalDescription)
         displayIcon = try values.decodeIfPresent(String.self, forKey: .displayIcon)
         splash = try values.decode(String.self, forKey: .splash)

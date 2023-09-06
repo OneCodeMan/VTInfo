@@ -18,7 +18,7 @@ struct MapsRowView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(map.displayName)
                 
-                Text(map.narrativeDescription ?? "")
+                Text(map.narrativeSummary ?? "")
                     .font(.caption)
             }
             .padding(.trailing, 10)

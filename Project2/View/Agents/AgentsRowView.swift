@@ -19,6 +19,7 @@ struct AgentsRowView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(agent.displayName)
                     .frame(alignment: .leading)
+                    .font(.title2)
                 
                 Text(agent.description)
                     .font(.caption)
