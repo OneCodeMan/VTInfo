@@ -60,13 +60,23 @@ struct VTWeapon: Decodable, Identifiable {
         displayName = try values.decode(String.self, forKey: .displayName)
         
         // JSON gives us `EFEquipabbleCategory::Heavy`, we only want `Heavy`
-        let categoryDelimiter = "::"
+        let categoryAndPenetrationDelimiter = "::"
         let unparsedCategory = try values.decode(String.self, forKey: .category)
-        let parsedCategory = unparsedCategory.components(separatedBy: categoryDelimiter).last ?? ""
+        let parsedCategory = unparsedCategory.components(separatedBy: categoryAndPenetrationDelimiter).last ?? ""
         category = parsedCategory
         
         weaponStats = try values.decodeIfPresent(VTWeaponStats.self, forKey: .weaponStats)
+        
+        if weaponStats == nil {
+            weaponStats = VTWeaponStats(magazineSize: 1, runSpeedMultiplier: 0.1, equipTimeSeconds: 0.1, reloadTimeSeconds: 0.1, wallPenetration: "N/A")
+        }
+        
         shopData = try values.decodeIfPresent(VTShopData.self, forKey: .shopData)
+        
+        if shopData == nil {
+            shopData = VTShopData(cost: 1, category: "N/A", categoryText: "N/A")
+        }
+        
         skins = try values.decode([VTSkins].self, forKey: .skins)
     }
 }
