@@ -32,7 +32,10 @@ struct VTAgent: Decodable, Identifiable {
         var displayIcon: String
     }
 
-    struct VTAbility: Decodable {
+    struct VTAbility: Decodable, Identifiable {
+        
+        let id = UUID()
+        
         var slot: String
         var displayName: String
         var description: String

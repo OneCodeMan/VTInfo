@@ -24,4 +24,7 @@ struct Constants {
     static let AGENTS_TAB_BAR_IMAGE = "person.3.sequence.fill"
     static let MAPS_TAB_BAR_IMAGE = "map.circle.fill"
     static let WEAPONS_TAB_BAR_IMAGE = "hurricane"
+    
+    // Detail view titles
+    static let ABILITIES_SECTION = "Abilities"
 }
