@@ -10,6 +10,14 @@ import Alamofire
 
 struct VALORANTService {
     
+    // ar-AE / de-DE / en-US / es-ES / es-MX / fr-FR / id-ID / it-IT / ja-JP / ko-KR / pl-PL / pt-BR / ru-RU / th-TH / tr-TR / vi-VN / zh-CN / zh-TW
+    // use enums
+    var localeRegion = "en-US"
+    
+    init() {
+        guard let language = Locale.current.language.languageCode else { return }
+    }
+    
     func fetchAgents(completion: @escaping ([VTAgent]) -> Void) {
         AF.request(Constants.AGENTS_URL).responseDecodable(of: VTAgentData.self) { response in
             switch response.result {
