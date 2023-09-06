@@ -27,4 +27,7 @@ struct Constants {
     
     // Detail view titles
     static let ABILITIES_SECTION = "Abilities"
+    
+    // Other
+    static let NO_IMAGE_FOUND_URL = "https://upload.wikimedia.org/wikipedia/commons/d/d1/Image_not_available.png"
 }

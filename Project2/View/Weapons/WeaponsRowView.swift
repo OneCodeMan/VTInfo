@@ -11,7 +11,7 @@ struct WeaponsRowView: View {
     let weapon: VTWeapon
     
     var body: some View {
-        CustomAsyncImage(imageURLString: weapon.skins[0].displayIcon ?? "")
+        CustomAsyncImage(imageURLString: weapon.skins[0].displayIcon ?? Constants.NO_IMAGE_FOUND_URL)
 
         VStack(alignment: .leading, spacing: 5) {
             Text(weapon.displayName)

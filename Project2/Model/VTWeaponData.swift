@@ -38,7 +38,9 @@ struct VTWeapon: Decodable, Identifiable {
         var categoryText: String
     }
     
-    struct VTSkins: Decodable {
+    struct VTSkins: Decodable, Identifiable {
+        let id = UUID()
+        
         var uuid: String
         var displayName: String
         var displayIcon: String?

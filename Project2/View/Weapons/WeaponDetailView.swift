@@ -21,7 +21,7 @@ struct WeaponDetailView: View {
                     .font(.title3)
                     .italic()
                     
-                    AsyncImage(url: URL(string: weapon.skins[0].displayIcon ?? "")!, content: { image in
+                AsyncImage(url: URL(string: weapon.skins[0].displayIcon ?? Constants.NO_IMAGE_FOUND_URL)!, content: { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -69,6 +69,20 @@ struct WeaponDetailView: View {
                     }
                     .frame(alignment: .trailing)
                 }
+                
+                // Skins
+                VStack {
+                    Text("SKINS")
+                        .font(.title2)
+                    
+                    ForEach(weapon.skins) { skin in
+                        HStack {
+                            CustomAsyncImage(imageURLString: skin.displayIcon ?? Constants.NO_IMAGE_FOUND_URL)
+                            Text(skin.displayName)
+                        }
+                    }
+                }
+                .padding(.top, 20)
                 
             }
             .padding()
