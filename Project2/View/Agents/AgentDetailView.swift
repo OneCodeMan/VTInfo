@@ -24,6 +24,7 @@ struct AgentDetailView: View {
                 Text(agent.role?.displayName ?? "")
                     .font(.subheadline)
                     .italic()
+                    .foregroundColor(.gray)
                 
                 Text(agent.description)
                     .font(.caption)
